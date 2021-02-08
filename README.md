@@ -3,6 +3,7 @@
 * [ ] create build command that does the build static then deploys to github
 * [ ] actually create a theme
 * [ ] redirect paulllama.com/game to Foundry
+* [ ] set up templates
 * [ ] write thoughts?
 
 # write
