@@ -1,0 +1,4 @@
+baseURL = "http://paulllama.com/"
+languageCode = "en-us"
+title = "paulllama"
+theme = "ananke"
