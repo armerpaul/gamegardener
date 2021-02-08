@@ -13,7 +13,7 @@ hugo new <game>/<folder>/<file>.md
 
 then tap dem keys
 
-# run Locally
+# run locally
 
 ```
 hugo server
