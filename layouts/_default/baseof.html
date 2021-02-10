@@ -17,10 +17,10 @@
 </head>
 
 <body>
-  <header>
-    {{ block "header" . }}{{ partial "partials/header.html" .}}{{ end }}
-  </header>
   <main role="main">
+    <nav>
+      {{ block "header" . }}{{ partial "partials/header.html" .}}{{ end }}
+    </nav>
     {{ block "main" . }}{{ end }}
   </main>
   <footer>

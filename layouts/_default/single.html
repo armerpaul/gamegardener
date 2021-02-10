@@ -1,5 +1,10 @@
 {{ define "main" }}
+
 <article>
-  {{- .Content -}}
+  {{- .TableOfContents -}}
+  <section>
+    <h1>{{- .Title -}}</h1>
+    {{- .Content -}}
+  </section>
 </article>
 {{ end }}
