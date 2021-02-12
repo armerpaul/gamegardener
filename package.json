@@ -4,18 +4,14 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "test",
 		"local": "hugo server",
-		"build": "hugo -D && gh-pages -d public"
+		"build": "./deploy.sh"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/armerpaul/paulllama.git"
+		"url": "git+https://github.com/armerpaul/gamegardener.git"
 	},
 	"author": "armerpaul",
 	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/armerpaul/paulllama/issues"
-	},
-	"homepage": "paulllama.com"
+	"homepage": "gamegardener.com"
 }
