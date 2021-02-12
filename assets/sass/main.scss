@@ -13,16 +13,19 @@ body {
 main {
 	display: flex;
 	flex-direction: row;
+	margin-left: 11.25rem;
 
 	> nav {
 		position: fixed;
+		top: 0;
+		left: 0;
 		width: 100%;
 		background: $color-nav;
 		display: flex;
 		flex-direction: row;
 
 		ul {
-			flex-basis: 37.5rem;
+			margin-left: 37.5rem;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
