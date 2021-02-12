@@ -1,6 +1,7 @@
 @import "colors";
 
 article {
+	$top-padding: 8rem;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -12,7 +13,7 @@ article {
 
 		> ul {
 			position: sticky;
-			top: 8rem; // 5rem (h1 height) + 3rem (h1 margin-top)
+			top: $top-padding;
 			padding-right: 2rem;
 		}
 
@@ -28,8 +29,14 @@ article {
 	// article content
 	section {
 		flex-basis: 37.5rem;
-		margin-left: 11.25em;
+		margin-left: 11.25rem;
 		margin-right: 7rem;
 		padding-bottom: 30vh;
+
+		// This gives some room when using the ToC
+		> [id] {
+			padding-top: calc(#{$top-padding} + 0.8em);
+			margin-top: -1 * $top-padding;
+		}
 	}
 }
