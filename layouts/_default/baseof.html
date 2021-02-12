@@ -19,12 +19,23 @@
 <body>
   <main role="main">
     <nav>
-      {{ block "header" . }}{{ partial "partials/header.html" .}}{{ end }}
+      <ul>
+        <li>
+          <a href="/">
+            <span>👨‍🌾</span>game gardener
+          </a>
+        </li>
+        <li>
+          <a href="/dnd/class-guides">
+            D&D Class Guides
+          </a>
+        </li>
+      </ul>
     </nav>
     {{ block "main" . }}{{ end }}
   </main>
   <footer>
-    {{ block "footer" . }}{{ partial "partials/footer.html" . }}{{ end }}
+
   </footer>
 </body>
 

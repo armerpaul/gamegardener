@@ -1,25 +1,22 @@
 @import "colors";
 
 article {
-	$toc-width: 20rem;
-	$content-width: 40rem;
-
 	width: 100%;
-	max-width: $toc-width + $content-width;
 	display: flex;
 	flex-direction: row;
+	padding-top: 5rem;
 
 	// table of contents
 	nav {
-		width: $toc-width;
+		width: 22rem;
 
 		> ul {
 			position: sticky;
-			top: 0;
+			top: 8rem; // 5rem (h1 height) + 3rem (h1 margin-top)
+			padding-right: 2rem;
 		}
 
 		ul {
-			list-style: none;
 			padding-inline-start: 2em;
 
 			li {
@@ -30,11 +27,9 @@ article {
 
 	// article content
 	section {
-		flex-basis: 40rem;
-		padding: 0.5rem;
-
-		@media (min-width: 600px) {
-			padding-left: 1.5rem;
-		}
+		flex-basis: 37.5rem;
+		margin-left: 11.25em;
+		margin-right: 7rem;
+		padding-bottom: 30vh;
 	}
 }
