@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="{{ $.Site.LanguageCode | default " en" }}">
+<html lang="en-us">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
-  <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+  
+  <title>paulllama</title>
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="description"
-    content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
-  {{ hugo.Generator }}
+    content="">
+  <meta name="generator" content="Hugo 0.80.0" />
   <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
-  {{ partial "partials/favicon.html" . }}
-  {{ partial "partials/styles.html" . }}
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="http://paulllama.com/sass/main.css">
+
 </head>
 
 <body>
@@ -30,7 +35,17 @@
         </li>
       </ul>
     </nav>
-    {{ block "main" . }}{{ end }}
+    
+    <article>
+        <section>
+            <h1>Tags</h1>
+            
+            <ul>
+                
+            </ul>
+        </section>
+    </article>
+
   </main>
   <footer>
 

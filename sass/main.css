@@ -1,0 +1,125 @@
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0; }
+
+nav ul {
+  list-style: none;
+  padding-inline-start: 0; }
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #c9d9d4; }
+
+h1, h2, h3, strong {
+  font-weight: 600; }
+
+h1 {
+  font-family: "Roboto Condensed", serif;
+  font-weight: 600;
+  font-size: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+h2 {
+  font-family: "Roboto Condensed", serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1.25rem; }
+
+h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1rem; }
+
+p {
+  line-height: 1.5; }
+
+a {
+  font-weight: 400;
+  color: #297a52;
+  text-decoration: none;
+  border-bottom: 0.1em solid transparent;
+  transition-duration: 300ms;
+  transition-property: border-bottom-color; }
+  a:hover {
+    border-bottom-color: rgba(41, 122, 82, 0.65); }
+
+article {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5rem; }
+  article nav {
+    width: 22rem; }
+    article nav > ul {
+      position: sticky;
+      top: 8rem;
+      padding-right: 2rem; }
+    article nav ul {
+      padding-inline-start: 2em; }
+      article nav ul li {
+        padding-top: 0.5em; }
+  article section {
+    flex-basis: 37.5rem;
+    margin-right: 7rem;
+    padding-bottom: 30vh; }
+    article section > [id] {
+      padding-top: calc(8rem + 0.8em);
+      margin-top: -8rem; }
+
+body {
+  margin: 0;
+  background: #0d1712; }
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin-left: 11.25rem; }
+  main > nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1b4932;
+    display: flex;
+    flex-direction: row; }
+    main > nav ul {
+      margin-left: 37.5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      align-items: stretch; }
+    main > nav a {
+      border-bottom-width: 0;
+      color: #c9d9d4;
+      font-weight: 600;
+      padding: 0 1em;
+      opacity: 0.6;
+      transition-duration: 300ms;
+      transition-property: opacity, background;
+      display: flex;
+      height: 100%;
+      align-items: center; }
+      main > nav a:hover {
+        opacity: 1;
+        background: rgba(201, 217, 212, 0.1); }
+    main > nav > a {
+      font-size: 1.45rem;
+      width: 10rem;
+      line-height: 1.15;
+      padding: 0.5rem 0.5rem 0.8rem 0.5rem;
+      color: #c9d9d4;
+      font-weight: 400;
+      font-family: "Roboto Condensed", serif;
+      border-bottom-width: 0;
+      opacity: 1;
+      display: flex;
+      align-items: center; }
+      main > nav > a span {
+        font-size: 2.5rem;
+        float: left;
+        margin-right: 0.75rem; }
