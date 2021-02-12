@@ -1,3 +1,9 @@
+changed_files=`git diff-index --name-only HEAD --`
+if [[ -n "$changed_files" ]]; then
+  echo "There are active changes on this branch. Aborting."
+	exit 1
+fi
+
 git checkout public
 git pull
 hugo -D
