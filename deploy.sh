@@ -4,9 +4,9 @@ if [[ -n "$changed_files" ]]; then
 	exit 1
 fi
 
+hugo -D
 git checkout public
 git pull
-hugo -D
 mv CNAME public/CNAME
 rm -rf `ls | grep -v public`
 mv public/* .
