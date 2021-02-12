@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Class Guides on paulllama</title>
+    <link>http://paulllama.com/dnd/class-guides/</link>
+    <description>Recent content in Class Guides on paulllama</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://paulllama.com/dnd/class-guides/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Druid Class Guide</title>
+      <link>http://paulllama.com/dnd/class-guides/druid/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://paulllama.com/dnd/class-guides/druid/</guid>
+      <description>No Choice  Hit Die: d8 Welcome to the middle of the road. Nothing to say here.
+ Saving Throw Proficiencies: Wisdom, Intelligence Getting proficiency in wisdom saves is killer, as most magical saves are wisdom. Unfortunately, intelligence saves are the least common of any save 😬.
+Herbalism kit Simple weapons, medium armor, and shields Druids often get compared to druids, and
+Druidic Pass notes to other druids. This can be a solid plot hook for your DM, but the applications are relatively niche.</description>
+    </item>
+    
+  </channel>
+</rss>
