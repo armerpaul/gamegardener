@@ -6,10 +6,19 @@ draft: false
 ---
 
 ## No Choice
+```rating-3
+```
+
 > Hit Die: d8
+
 Welcome to the middle of the road. Nothing to say here.
 
-### Saving Throw Proficiencies: Wisdom, Intelligence
+### Saving Throw Proficiencies
+```rating-3
+```
+
+> Wisdom, Intelligence
+
 Getting proficiency in wisdom saves is killer, as most magical saves are wisdom.
 Unfortunately, intelligence saves are the least common of any save 😬.
 
@@ -27,8 +36,9 @@ Perception and then a Arcana / Religion if you're a more learned druid or Animal
 Survival if you're a more primal druid.
 
 ## Spellcasting
-```rating-4
+```rating-5
 ```
+
 > Full Caster
 >
 > Casting Stat: Wisdom
@@ -52,6 +62,9 @@ and others like **Detect Magic** or **Speak with Animals** without even expendin
 Allows you to swap out your build as you become more experienced. Seems nice to codify something
 that most DMs were fine with anyways.
 ## Wild Shape
+```rating-4
+```
+
 > Shapeshift into small animals
 
 Recharging on a short rest, Druid can be wild shaping all the time. With the limitation on

@@ -38,4 +38,51 @@ article {
 			margin-top: -1 * $top-padding;
 		}
 	}
+
+	h2 + pre {
+		top: -2.55em;
+	}
+
+	h3 + pre {
+		top: -2em;
+	}
+
+	pre {
+		position: relative;
+		height: 0;
+
+		[data-lang^="rating"] {
+			&:before, &:after {
+				position: absolute;
+				width: 2rem;
+				left: -2.1rem;
+				text-align: center;
+			}
+
+			&:before {
+				top: -0.6rem;
+			}
+
+			&:after {
+				top: 0;
+			}
+		}
+
+		@mixin rating-dots($name, $before, $after: '') {
+			[data-lang="#{$name}"] {
+				&:before {
+					content: "#{$before}";
+				}
+				&:after {
+					content: "#{$after}";
+				}
+			}
+		}
+
+		@include rating-dots('rating-1', '•');
+		@include rating-dots('rating-2', '•', '•');
+		@include rating-dots('rating-3', '••', '•');
+		@include rating-dots('rating-4', '••', '••');
+		@include rating-dots('rating-5', '•••', '••');
+	}
 }
