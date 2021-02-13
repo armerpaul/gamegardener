@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ul {
   margin-block-start: 0;
   margin-block-end: 0; }
@@ -52,23 +53,106 @@ article {
   display: flex;
   flex-direction: row;
   padding-top: 5rem; }
-  article nav {
-    width: 22rem; }
-    article nav > ul {
-      position: sticky;
-      top: 8rem;
-      padding-right: 2rem; }
-    article nav ul {
+  article aside {
+    position: fixed;
+    width: 100vw;
+    top: 3.5rem;
+    left: 0;
+    background: #143022; }
+    article aside nav {
+      height: 0;
+      overflow-y: hidden;
+      transition-property: height;
+      transition-duration: 500ms; }
+      article aside nav:before {
+        position: absolute;
+        top: 0.75rem;
+        right: 0.75rem;
+        content: '▼';
+        transition-property: transform;
+        transition-duration: 500ms; }
+      article aside nav > ul {
+        margin-bottom: 2rem; }
+    article aside label {
+      padding: 0.75rem;
+      display: block;
+      position: relative; }
+    article aside input {
+      display: none; }
+      article aside input:checked + nav {
+        height: 40vh;
+        overflow-y: auto; }
+        article aside input:checked + nav:before {
+          transform: rotate(180deg); }
+    article aside ul {
       padding-inline-start: 2em; }
-      article nav ul li {
+      article aside ul li {
         padding-top: 0.5em; }
+    @media (min-width: 36rem) {
+      article aside {
+        position: relative;
+        width: 22rem;
+        top: 0;
+        left: auto;
+        background: transparent;
+        height: auto; }
+        article aside label {
+          display: none; }
+        article aside nav {
+          position: sticky;
+          top: 8rem;
+          padding-right: 2rem;
+          height: auto; }
+          article aside nav:before {
+            display: none; } }
   article section {
     flex-basis: 37.5rem;
-    margin-right: 7rem;
     padding-bottom: 30vh; }
     article section > [id] {
       padding-top: calc(8rem + 0.8em);
       margin-top: -8rem; }
+    @media (min-width: 30rem) {
+      article section {
+        margin-right: 2rem; } }
+    @media (min-width: 64rem) {
+      article section {
+        margin-right: 7rem; } }
+  article h2 + pre {
+    top: -2.55em; }
+  article h3 + pre {
+    top: -2em; }
+  article pre {
+    position: relative;
+    height: 0; }
+    article pre [data-lang^="rating"]:before, article pre [data-lang^="rating"]:after {
+      position: absolute;
+      width: 2rem;
+      left: -2.1rem;
+      text-align: center; }
+    article pre [data-lang^="rating"]:before {
+      top: -0.6rem; }
+    article pre [data-lang^="rating"]:after {
+      top: 0; }
+    article pre [data-lang="rating-1"]:before {
+      content: "•"; }
+    article pre [data-lang="rating-1"]:after {
+      content: ""; }
+    article pre [data-lang="rating-2"]:before {
+      content: "•"; }
+    article pre [data-lang="rating-2"]:after {
+      content: "•"; }
+    article pre [data-lang="rating-3"]:before {
+      content: "••"; }
+    article pre [data-lang="rating-3"]:after {
+      content: "•"; }
+    article pre [data-lang="rating-4"]:before {
+      content: "••"; }
+    article pre [data-lang="rating-4"]:after {
+      content: "••"; }
+    article pre [data-lang="rating-5"]:before {
+      content: "•••"; }
+    article pre [data-lang="rating-5"]:after {
+      content: "••"; }
 
 body {
   margin: 0;
@@ -77,7 +161,14 @@ body {
 main {
   display: flex;
   flex-direction: row;
-  margin-left: 11.25rem; }
+  margin-left: 0.5rem;
+  margin-right: 0.5rem; }
+  @media (min-width: 36rem) {
+    main {
+      margin-left: 6rem; } }
+  @media (min-width: 60rem) {
+    main {
+      margin-left: 11.25rem; } }
   main > nav {
     position: fixed;
     top: 0;
@@ -85,14 +176,17 @@ main {
     width: 100%;
     background: #1b4932;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    z-index: 1;
+    justify-content: space-between; }
     main > nav ul {
-      margin-left: 37.5rem;
       display: flex;
       flex-direction: row;
-      align-items: center;
       justify-content: flex-end;
       align-items: stretch; }
+      @media (min-width: 60rem) {
+        main > nav ul {
+          margin-right: 3rem; } }
     main > nav a {
       border-bottom-width: 0;
       color: #c9d9d4;
@@ -109,7 +203,6 @@ main {
         background: rgba(201, 217, 212, 0.1); }
     main > nav > a {
       font-size: 1.45rem;
-      width: 10rem;
       line-height: 1.15;
       padding: 0.5rem 0.5rem 0.8rem 0.5rem;
       color: #c9d9d4;
@@ -120,6 +213,11 @@ main {
       display: flex;
       align-items: center; }
       main > nav > a span {
-        font-size: 2.5rem;
+        font-size: 2rem;
         float: left;
         margin-right: 0.75rem; }
+      @media (min-width: 60rem) {
+        main > nav > a {
+          width: 10rem; }
+          main > nav > a span {
+            font-size: 2.5rem; } }
