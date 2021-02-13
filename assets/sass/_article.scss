@@ -29,13 +29,17 @@ article {
 	// article content
 	section {
 		flex-basis: 37.5rem;
-		margin-right: 7rem;
+		margin-right: 2rem;
 		padding-bottom: 30vh;
 
 		// This gives some room when using the ToC
 		> [id] {
 			padding-top: calc(#{$top-padding} + 0.8em);
 			margin-top: -1 * $top-padding;
+		}
+
+		@media (min-width: 64rem) {
+			margin-right: 7rem;
 		}
 	}
 

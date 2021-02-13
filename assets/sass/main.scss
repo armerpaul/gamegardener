@@ -14,7 +14,15 @@ body {
 main {
 	display: flex;
 	flex-direction: row;
-	margin-left: 11.25rem;
+	margin-left: 0.5rem;
+
+	@media (min-width: 36rem) {
+		margin-left: 6rem;
+	}
+
+	@media (min-width: 60rem) {
+		margin-left: 11.25rem;
+	}
 
 	> nav {
 		position: fixed;
@@ -24,6 +32,7 @@ main {
 		background: $color-nav;
 		display: flex;
 		flex-direction: row;
+		z-index: 1;
 
 		ul {
 			margin-left: 37.5rem;
