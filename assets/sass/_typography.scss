@@ -20,9 +20,15 @@ h1, h2, h3, strong {
 h1 {
 	font-family: $font-family-heading;
 	font-weight: $font-weight-bold;
-	font-size: 5rem;
-	margin-top: 3rem;
-	margin-bottom: 3rem;
+	font-size: 3.5rem;
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
+
+	@media (min-width: 36rem) {
+		font-size: 5rem;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
 }
 
 h2 {
