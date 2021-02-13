@@ -33,14 +33,17 @@ main {
 		display: flex;
 		flex-direction: row;
 		z-index: 1;
+		justify-content: space-between;
 
 		ul {
-			margin-left: 37.5rem;
 			display: flex;
 			flex-direction: row;
-			align-items: center;
 			justify-content: flex-end;
 			align-items: stretch;
+
+			@media (min-width: 60rem) {
+				margin-right: 3rem;
+			}
 		}
 
 		a {
@@ -64,7 +67,6 @@ main {
 		// LOGO
 		> a {
 			font-size: 1.45rem;
-			width: 10rem;
 			line-height: 1.15;
 			padding: 0.5rem 0.5rem 0.8rem 0.5rem;
 			color: $color-text;
@@ -76,9 +78,17 @@ main {
 			align-items: center;
 
 			span {
-				font-size: 2.5rem;
+				font-size: 2rem;
 				float: left;
 				margin-right: 0.75rem;
+			}
+
+			@media (min-width: 60rem) {
+				width: 10rem;
+
+				span {
+					font-size: 2.5rem;
+				}
 			}
 		}
 	}
