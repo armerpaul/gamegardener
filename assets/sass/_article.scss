@@ -8,13 +8,52 @@ article {
 	padding-top: 5rem;
 
 	// table of contents
-	nav {
-		width: 22rem;
+	aside {
+		position: fixed;
+		width: 100vw;
+		top: 3.5rem;
+		left: 0;
+		background: mix($color-bg, $color-nav);
 
-		> ul {
-			position: sticky;
-			top: $top-padding;
-			padding-right: 2rem;
+		nav {
+			height: 0;
+			overflow-y: hidden;
+			transition-property: height;
+			transition-duration: 500ms;
+
+			&:before {
+				position: absolute;
+				top: 0.75rem;
+				right: 0.75rem;
+				content: '▼';
+				transition-property: transform;
+				transition-duration: 500ms;
+			}
+
+			> ul {
+				margin-bottom: 2rem;
+			}
+		}
+
+		label {
+			padding: 0.75rem;
+			display: block;
+			position: relative;
+		}
+
+		input {
+			display: none;
+
+			&:checked {
+				+ nav {
+					height: 40vh;
+					overflow-y: auto;
+
+					&:before {
+						transform: rotate(180deg);
+					}
+				}
+			}
 		}
 
 		ul {
@@ -24,18 +63,45 @@ article {
 				padding-top: 0.5em;
 			}
 		}
+
+		@media (min-width: 36rem) {
+			position: relative;
+			width: 22rem;
+			top: 0;
+			left: auto;
+			background: transparent;
+			height: auto;
+
+			label {
+				display: none;
+			}
+
+			nav {
+				position: sticky;
+				top: $top-padding;
+				padding-right: 2rem;
+				height: auto;
+
+				&:before {
+					display: none;
+				}
+			}
+		}
 	}
 
 	// article content
 	section {
 		flex-basis: 37.5rem;
-		margin-right: 2rem;
 		padding-bottom: 30vh;
 
 		// This gives some room when using the ToC
 		> [id] {
 			padding-top: calc(#{$top-padding} + 0.8em);
 			margin-top: -1 * $top-padding;
+		}
+
+		@media (min-width: 30rem) {
+			margin-right: 2rem;
 		}
 
 		@media (min-width: 64rem) {

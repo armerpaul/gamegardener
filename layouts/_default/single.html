@@ -5,7 +5,13 @@
     <h1>{{- .Title -}}</h1>
     {{- .Content -}}
   </section>
-  {{- .TableOfContents -}}
+  <aside>
+    <label for="TableOfContents">
+      Table of Contents
+    </label>
+    <input id="TableOfContents" type="checkbox" />
+    {{- .TableOfContents -}}
+  </aside>
 </article>
 
 {{ end }}
