@@ -1,3 +1,8 @@
 baseURL = "http://gamegardener.com/"
 languageCode = "en-us"
 title = "game gardener"
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    startLevel = 2

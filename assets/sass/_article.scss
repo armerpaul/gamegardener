@@ -109,17 +109,10 @@ article {
 		}
 	}
 
-	h2 + pre {
-		top: -2.55em;
-	}
-
-	h3 + pre {
-		top: -2em;
-	}
-
 	pre {
 		position: relative;
 		height: 0;
+		top: -2em;
 
 		[data-lang^="rating"] {
 			&:before, &:after {
