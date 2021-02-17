@@ -118,7 +118,7 @@ While this does key off of Charisma, these nature-heavy fey have access to a sho
 #### High Elf
 ```rating-5
 ```
-Access to even 1 wizard cantrip can add so much to a character. Options include Booming Blade for a powerful melee attack, the practically limitless **Prestidigitation** or other great utility options like **Mage Hand** or **Message**. Then on top of that you can throw in an extra language.
+Access to even 1 wizard cantrip can add so much to a character. Options include Booming Blade for a powerful melee attack, the practically limitless **Prestidigitation** or other great utility options like **Mage Hand** or **Message** that the druid doesn't get access to normally. Then on top of that you can throw in an extra language.
 
 #### Wood Elf
 ```rating-4
@@ -162,17 +162,107 @@ With Tasha's you can probably work with your DM to make the Artificer's Lore mor
 ### Grung
 ​
 ### Half-Elf
+
+#### Original
+```rating-5
+```
+Really a great choice for any class: +2 to one stat and +1 to two others is the most potent and flexible stat bump from any origin. Every adventurer needs darkvision, and two free skills that can fit any build.
+
+#### Aquatic Half-Elf: Swimming Speed
+```rating-1
+```
+If you need to swim, you can turn into a swimming animal. This is not worth two skills.
+
+#### Drow Half-Elf: Drow Magic
+```rating-1
+```
+Skills are more useful than these charisma based spells.
 ​
+#### High Half-Elf: Cantrip
+```rating-5
+```
+Access to even 1 wizard cantrip can add so much to a character. Options include Booming Blade for a powerful melee attack, the practically limitless **Prestidigitation** or other great utility options like **Mage Hand** or **Message** that the druid doesn't get access to normally.
+
+#### Wood Half-Elf: Fleet of Foot
+```rating-1
+```
+You're probably better off with a Variant Human taking the Mobile feat.
+
+#### Wood Half-Elf: Mask of the Wild
+```rating-3
+```
+On a druid, this steath skill will definitely come in handy while in wild shape. You will arguably get more use out of 2 skills since you'll be spending more time as a humanoid. 🤷‍♀️
+
+#### Mark of Detection Half-Elf
+```rating-2
+```
+You don't get the other benefits of normal half-elves, and you only get some situational spells.
+
+#### Mark of Storm Half-Elf
+```rating-1
+```
+While damage resistence is always nice to see, the spells gained from this original are all druid spells. So the main feature of this class is of no benefit to a druid.
 ### Half-Orc
 ​
+#### Original
+```rating-3
+```
+**Savage Attacks** is a nice ability for those druids who like to use their wild shape for combat. While **Relentless Endurance** is also nice for melee, though if you're back in humanoid form, you're probably retreating or casting spells.
+
+#### Mark of Finding Half-Orc
+```rating-1
+```
+All the Spells of the Mark are druid spells, so this doesn't do much for a druid.
 ### Halfling
-​
+```rating-3
+```
+​While Halfling luck never goes unappreciated, there's nothing particularly good for a druid from the any Halfling sub-origin. It's 3's across the board with the exception of:
+
+#### Mark of Hospitality Halfling
+```rating-4
+```
+The main draw of this origin is that great spell list! **Sleep** is great at low levels, as enemies have much lower HP. **Calm Emotions** shines in social encounters, something druids aren't great at normally. **Leomund’s tiny hut** is incredible for long term party travel--and you can flavor this in a lot of ways.
 ### Hexblood (UA)
 ​
+
 ### Hobgoblin
 ​
 ### Human
+
+#### Original
+```rating-1
+```
+Druids aren't generally multi-ability score classes, so you're better off with a Half-elf.
+
+#### Variant
+```rating-5
+```
+There are a few feats that can really change a druid. Melee druids are going to love **War Casters**, and caster-focused druids wouldn't mind proficiency in concentration checks through **Resilient (CON)**. Getting a feat early means all your future Ability Score Increases can max out your casting stat (Wisdom) and then increasing your HP (Constitution) or AC (Dexterity).
+
+#### Mark of Finding Human
+```rating-1
+```
+All the Spells of the Mark are druid spells, so this doesn't do much for a druid.
+
+#### Mark of Handling Human
+```rating-1
+```
+All the Spells of the Mark are druid spells, so this doesn't do much for a druid.
 ​
+#### Mark of Making Human
+```rating-3
+```
+These are all spells that druids normally don't get, so the flexibility is welcomed. Some of the spells (**Magic Weapon**, **Elemental Weapon**) might be wasted on you, but you could cast them on your melee allies. Since they are touch spells, you could even have a Wild Companion deliver the spell.
+
+#### Mark of Passage Human
+```rating-3
+```
+This is a 3 because of **Misty Step**: being able to get out of the way can be a literal life saver. The rest of the spells are nice, but ultimately, a druid is already pretty good at mobility when it matters via wild shape and their own spells.
+
+#### Mark of Sentinel Human
+```rating-5
+```
+A free shield once a day? We're off to a great start. Vigilant guardian allows you to take the hit for an ally, as say, a brown bear. And finally a jaw-dropping spell list: **Sheild of Faith** fixes your low AC, or slap it on the melee party member. **Warding Bond** is also great to cast right before wildshaping, so that the damage you takes away from the big bag of HP you just turned into. **Counterspell** along side the druid's **Dispell Magic** will allow you to undo *any* magic.
 ### Kalashtar
 ​
 ### Kenku
